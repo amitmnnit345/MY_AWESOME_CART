@@ -1,0 +1,21 @@
+{% extends 'notes/basic.html' %}
+{% block title%}my notes{% endblock %}
+{% block body %}
+     <div class="container my-3">
+        <h1>choosen Notes</h1>
+        <div class="card">
+            <div class="card-body">
+                <div class="form-group">
+                    <h5 for="exampleInputEmail1">Title</h5>
+                    <input type="text" class="form-control" id="addTitle" aria-describedby="title" placeholder="Enter Title">
+                </div>
+                <h5 class="card-title"> Your's note</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBtn">Edit Note</button>
+            </div>
+        </div>
+        <div id="notes" class="row container-fluid"> </div>
+     </div>
+{% endblock %}
